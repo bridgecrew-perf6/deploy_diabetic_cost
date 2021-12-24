@@ -1,9 +1,9 @@
 
 '''
-This is a simple linear regression model to predit the CO2 emmission from cars
+This is a simple linear regression model to predit the diabetic medication cost based on patients 
+adherence and other health factor
 Dataset:
-FuelConsumption.csv, which contains model-specific fuel consumption ratings and estimated carbon dioxide emissions
-for new light-duty vehicles for retail sale in Canada
+dataset.csv, which contains patients health conditions and medication consumption
 '''
 
 import pandas as pd
