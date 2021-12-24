@@ -14,29 +14,25 @@
 
 <body>
  <div class="login">
-	<h1>Predict medication Cost for the patient</h1>
-     <h3> Enter the following values to predict the Cost</h3>
+	<!-- <h1>Predict medication Cost for the patient</h1> -->
+     <h3> Enter the following values to predict the Medication Cost</h3>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="INSULIN" placeholder="INSULIN" required="required" />
-        <input type="text" name="PRISK" placeholder="PRISK" required="required" />
-		<input type="text" name="CC_DISEASE_CNT" placeholder="CC_DISEASE_CNT" required="required" />
+      <input type="text" name="INSULIN" placeholder="INSULIN e.g. 1" required="required" />
+      <input type="text" name="PRISK" placeholder="PRISK e.g. 3.0" required="required" />
+      <input type="text" name="CC_DISEASE_CNT" placeholder="CC_DISEASE_CNT e.g. 2" required="required" />
 
-          <input type="text" name="CC_CHF_DAYS" placeholder="CC_CHF_DAYS" required="required" />
-        <input type="text" name="CC_DM_COMP_DAYS" placeholder="CC_DM_COMP_DAYS" required="required" />
-    <input type="text" name="CC_DM_WO_COMP_DAYS" placeholder="CC_DM_WO_COMP_DAYS" required="required" />
+      <input type="text" name="CC_CHF_DAYS" placeholder="CC_CHF_DAYS e.g. 500" required="required" />
+      <input type="text" name="CC_DM_COMP_DAYS" placeholder="CC_DM_COMP_DAYS e.g. 1000" required="required" />
+      <input type="text" name="CC_DM_WO_COMP_DAYS" placeholder="CC_DM_WO_COMP_DAYS e.g. 3000" required="required" />
 
-          <input type="text" name="MORB_OBESE_IND" placeholder="MORB_OBESE_IND" required="required" />
-        <input type="text" name="OBESITY_IND" placeholder="OBESITY_IND" required="required" />
+      <input type="text" name="MORB_OBESE_IND" placeholder="MORB_OBESE_IND e.g. 10" required="required" />
+      <input type="text" name="OBESITY_IND" placeholder="OBESITY_IND e.g. 1" required="required" />
 
-        <button type="submit" class="btn">Predict</button>
+      <button type="submit" class="btn">Predict</button>
     </form>
-
-   <br>
-   <br>
    {{ prediction_text }}
-
  </div>
 
 
